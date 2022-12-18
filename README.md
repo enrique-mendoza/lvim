@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Download ![LunarVim](https://www.lunarvim.org/).
+1. Download [LunarVim](https://www.lunarvim.org/).
 
 2. Clone into your `$HOME` directory or `~`.
 
