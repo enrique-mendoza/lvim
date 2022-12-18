@@ -4,7 +4,7 @@
 
 1. Download [LunarVim](https://www.lunarvim.org/).
 
-2. Clone into your `$HOME` directory or `~`.
+2. Clone into `$HOME/.config/lvim` directory.
 
    ```bash
    git clone https://github.com/enrique-mendoza/lvim.git ~
