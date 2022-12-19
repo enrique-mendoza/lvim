@@ -1,12 +1,12 @@
 -- General
 -- lvim.colorscheme = "onedarker"
+lvim.format_on_save.enabled = true
 lvim.log.level = "warn"
 lvim.lsp.diagnostics.float.focusable = true
 lvim.lsp.diagnostics.virtual_text = true
-lvim.reload_config_on_save = false
+lvim.reload_config_on_save = true
 
 vim.opt.showtabline = 0
-vim.g.use_nerd_icons = true
 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true

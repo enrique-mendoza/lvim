@@ -1,75 +1,79 @@
 -- Additional Plugins
 lvim.plugins = {
-  -- Buffers
-  "nacro90/numb.nvim",
+	-- Buffers
+	"nacro90/numb.nvim",
 
-  -- DAP
-  "mfussenegger/nvim-dap-python",
-  "mxsdev/nvim-dap-vscode-js",
+	-- Colors
+	"NvChad/nvim-colorizer.lua",
 
-  -- Git
-  {
-    "sindrets/diffview.nvim",
-    event = "BufRead",
-  },
-  {
-    "f-person/git-blame.nvim",
-    event = "BufRead",
-  },
+	-- DAP
+	"mfussenegger/nvim-dap-python",
+	"mxsdev/nvim-dap-vscode-js",
 
-  -- IDE
-  {
-    "folke/trouble.nvim",
-      cmd = "TroubleToggle",
-  },
-  "is0n/jaq-nvim",
-  "rmagatti/goto-preview",
-  "simrat39/symbols-outline.nvim",
-  "lvimuser/lsp-inlayhints.nvim",
+	-- Git
+	{
+		"sindrets/diffview.nvim",
+		event = "BufRead",
+	},
+	{
+		"f-person/git-blame.nvim",
+		event = "BufRead",
+	},
 
-  -- Languages
-  -- For Java:
-  "mfussenegger/nvim-jdtls",
+	-- IDE
+	{
+		"folke/trouble.nvim",
+		cmd = "TroubleToggle",
+	},
+	"is0n/jaq-nvim",
+	"rmagatti/goto-preview",
+	"simrat39/symbols-outline.nvim",
+	"lvimuser/lsp-inlayhints.nvim",
 
-  -- LSP
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-  },
+	-- Languages
+	-- For Java:
+	"mfussenegger/nvim-jdtls",
 
-  -- Navigation
-  {
-    "kevinhwang91/nvim-bqf",
-    event = { "BufRead", "BufNew" },
-  },
-  {
-    "nvim-telescope/telescope-project.nvim",
-    event = "BufWinEnter",
-    setup = function()
-      vim.cmd [[packadd telescope.nvim]]
-    end,
-  },
+	-- LSP
+	-- "glepnir/lspsaga.nvim",
+	{
+		"ray-x/lsp_signature.nvim",
+		event = "BufRead",
+	},
 
-  -- Treesitter
-  {
-    "nvim-treesitter/playground",
-    event = "BufRead",
-  },
-  "romgrk/nvim-treesitter-context",
+	-- Navigation
+	{
+		"kevinhwang91/nvim-bqf",
+		event = { "BufRead", "BufNew" },
+	},
+	{
+		"nvim-telescope/telescope-project.nvim",
+		event = "BufWinEnter",
+		setup = function()
+			vim.cmd([[packadd telescope.nvim]])
+		end,
+	},
+	"psliwka/vim-smoothie",
 
-  -- Utils
-  "cohama/lexima.vim",
-  {
-    "folke/todo-comments.nvim",
-    event = "BufRead",
-  },
-  "folke/zen-mode.nvim",
-  "hrsh7th/cmp-emoji",
-  {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-    ft = "markdown",
-  },
-  "psliwka/vim-smoothie",
-  "windwp/nvim-ts-autotag",
+	-- Treesitter
+	{
+		"nvim-treesitter/playground",
+		event = "BufRead",
+	},
+	"romgrk/nvim-treesitter-context",
+
+	-- Utils
+	"cohama/lexima.vim",
+	{
+		"folke/todo-comments.nvim",
+		event = "BufRead",
+	},
+	"folke/zen-mode.nvim",
+	"hrsh7th/cmp-emoji",
+	{
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		ft = "markdown",
+	},
+	"windwp/nvim-ts-autotag",
 }
