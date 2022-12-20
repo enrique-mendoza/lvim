@@ -60,9 +60,11 @@ lvim.plugins = {
 		"nvim-treesitter/playground",
 		event = "BufRead",
 	},
-	"nvim-treesitter/nvim-treesitter-angular",
+	-- This repos doesn't support current angular version:
+	-- { "nvim-treesitter/nvim-treesitter-angular" },
+	-- { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
 	"nvim-treesitter/nvim-treesitter-textobjects",
-	-- "romgrk/nvim-treesitter-context",
+	"romgrk/nvim-treesitter-context",
 
 	-- Utils
 	"cohama/lexima.vim",
