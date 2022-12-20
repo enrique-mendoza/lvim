@@ -60,7 +60,7 @@ lvim.plugins = {
 		"nvim-treesitter/playground",
 		event = "BufRead",
 	},
-	"nvim-treesitter/nvim-treesitter-angular",
+	-- "nvim-treesitter/nvim-treesitter-angular",
 	"nvim-treesitter/nvim-treesitter-textobjects",
 	"romgrk/nvim-treesitter-context",
 
