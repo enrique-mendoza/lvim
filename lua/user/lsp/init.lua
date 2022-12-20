@@ -1,6 +1,4 @@
--- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "angularls" })
-
--- require("lvim.lsp.manager").setup("angularls")
+require("user.lsp.frameworks.angular")
 
 -- -- Set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require("lvim.lsp.null-ls.formatters")
