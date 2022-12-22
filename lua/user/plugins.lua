@@ -42,6 +42,7 @@ lvim.plugins = {
 	},
 
 	-- Navigation
+	{ "christianchiarulli/telescope-tabs", branch = "chris" },
 	{
 		"kevinhwang91/nvim-bqf",
 		event = { "BufRead", "BufNew" },
