@@ -15,6 +15,10 @@ lvim.builtin.autopairs.active = true
 lvim.builtin.breadcrumbs.active = true
 lvim.builtin.cmp.cmdline.enable = false
 lvim.builtin.cmp.window.documentation = false
+lvim.builtin.cmp.window.documentation = {
+	border = "rounded",
+	winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
+}
 lvim.builtin.cmp.window.completion = {
 	border = "rounded",
 	winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
@@ -80,7 +84,7 @@ for k, v in pairs(options) do
 end
 
 -- Switching between numbers and relative numbers
-vim.api.nvim_create_autocmd("InsertEnter", {
-	pattern = "*",
-	command = "set norelativenumber",
-})
+-- vim.api.nvim_create_autocmd("InsertEnter", {
+-- 	pattern = "*",
+-- 	command = "set norelativenumber",
+-- })
